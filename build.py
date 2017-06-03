@@ -477,8 +477,8 @@ def SetUpTern():
   # So instead, we have a package.json within our "Tern runtime" directory
   # (third_party/tern_runtime) that defines the packages that we require,
   # including Tern and any plugins which we require as standard.
-  os.chdir( p.join( DIR_OF_THIS_SCRIPT, 'third_party', 'tern_runtime' ) )
-  CheckCall( [ npm, 'install', '--production' ] )
+  #os.chdir( p.join( DIR_OF_THIS_SCRIPT, 'third_party', 'tern_runtime' ) )
+  #CheckCall( [ npm, 'install', '--production' ] )
 
 
 def WritePythonUsedDuringBuild():
